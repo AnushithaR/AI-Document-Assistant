@@ -1,0 +1,46 @@
+# ============================================================
+# AI Document Assistant Backend Dependencies
+# Python 3.11
+# ============================================================
+
+# --- API Framework ---
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.17
+
+# --- LangChain Framework ---
+# These packages use the compatible LangChain 0.3 generation.
+langchain==0.3.7
+langchain-core==0.3.63
+langchain-community==0.3.5
+langchain-text-splitters==0.3.2
+
+# --- LLM Providers ---
+# Main cloud provider used for deployment
+langchain-groq==0.2.1
+
+# Optional OpenAI support
+langchain-openai==0.2.6
+
+# Optional local Ollama support
+langchain-ollama==0.2.3
+
+# --- Hugging Face Embeddings ---
+langchain-huggingface==0.1.2
+sentence-transformers==3.2.1
+
+# --- Vector Store ---
+faiss-cpu==1.9.0
+
+# --- PDF Processing ---
+pypdf==5.0.1
+
+# --- Environment Variables ---
+python-dotenv==1.0.1
+
+# --- Supporting Libraries ---
+tiktoken==0.8.0
+numpy==1.26.4
+
+# SQLite is included with Python.
+# Do not add sqlite3 to requirements.txt.

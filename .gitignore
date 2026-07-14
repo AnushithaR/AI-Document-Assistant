@@ -1,0 +1,28 @@
+# --- Environment / Secrets ---
+.env
+
+# --- Python ---
+__pycache__/
+*.pyc
+venv/
+env/
+*.egg-info/
+
+# --- Runtime data (uploaded PDFs, FAISS index) ---
+data/*
+!data/.gitkeep
+vectorstore/*
+!vectorstore/.gitkeep
+
+# --- SQLite Database (contains user Q&A history — don't commit) ---
+app_data.db
+*.db
+*.sqlite3
+
+# --- IDE ---
+.vscode/
+.idea/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
